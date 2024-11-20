@@ -52,17 +52,16 @@ if process_url_clicked:
     
     main_placeholder.text("Index saved successfully! ✅✅✅")
 
-query = main_placeholder.text_input("Question: ")
+query = main_placeholder.text_input("Post which need to get verified: ")
 if query:
     if os.path.exists(file_path):
         embeddings = get_openai_embeddings()
         vectorstore = FAISS.load_local(file_path, embeddings, allow_dangerous_deserialization=True)
 
         # Create a custom prompt template
-        template = """Use the following pieces of context to answer the question at the end. 
-        If you don't know the answer, just say that you don't know, don't try to make up an answer. 
+        template = """Use the following pieces of context to check that give social media post is factually correct or not.
+        Cleary tell that given social mdeia post is that post fact correct according to cotext or not, along with reason.
         Use three sentences maximum and keep the answer as concise as possible. 
-        Always say "Based on the provided information," before giving the answer.
         {context}
         Question: {question}
         Helpful Answer:"""

@@ -10,7 +10,7 @@ def check_openai_api_key(api_key):
         return True
 
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 
 if check_openai_api_key(OPENAI_API_KEY):
     print("Valid OpenAI API key.")
