@@ -12,18 +12,17 @@ This project identifies misinformation in textual data using **Retrieval-Augment
 
 ### Prerequisites
 - Python 3.8+
+- Clone the repository
+
+  ```bash
+    git clone https://github.com/JimmyIITR/misInformationIdentificationUsingRAG.git
+    cd misInformationIdentificationUsingRAG
+  ```
 - Install the required libraries using `pip`:
 
     ```bash
     pip install -r requirements.txt
     ```
-
-### Clone the repository
-
-  ```bash
-    git clone https://github.com/YourUsername/Misinformation-Identification-with-LLM.git
-    cd Misinformation-Identification-with-LLM
-  ```
 
 ## Usage
 
@@ -33,7 +32,7 @@ This project identifies misinformation in textual data using **Retrieval-Augment
 2. **Run the Misinformation Detection**:
 
     ```bash
-    python misinformation_detector.py
+    streamlit run main.py
     ```
 
 The script will process the input data, query the retrieval system, and use the LLM to generate a classification for misinformation.
