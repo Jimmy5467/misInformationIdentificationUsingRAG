@@ -16,7 +16,7 @@ This project identifies misinformation in textual data using **Retrieval-Augment
 
   ```bash
     git clone https://github.com/JimmyIITR/misInformationIdentificationUsingRAG.git
-    cd misInformationIdentificationUsingRAG
+    cd misInformationIdentificationUsingRAG/usingLangChain
   ```
 - Install the required libraries using `pip`:
 
